@@ -63,3 +63,16 @@ btnLeft.addEventListener('click', function(){
 setInterval(function() {
   Next();
 }, 10000);
+
+// Posición del scroll de la pantalla
+var navBar = document.getElementById('navBar');
+
+window.onscroll = function() {
+  var y = window.scrollY;
+  
+  if (y >= 560) {
+    navBar.classList.add('active5');
+  } else {
+    navBar.classList.remove('active5');
+  }
+};

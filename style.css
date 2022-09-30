@@ -31,6 +31,10 @@ body {
   z-index: 5;
 }
 
+.navBar.active5 {
+  background-color: #fff;
+}
+
 .navBar img {
   display: block;
   width: 4.5rem;
