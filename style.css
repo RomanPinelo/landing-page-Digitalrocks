@@ -410,6 +410,7 @@ body {
 
 .footer ul li {
   list-style: none;
+  margin-bottom: 0.35rem;
 }
 
 .footer ul li a {
@@ -444,6 +445,10 @@ body {
 
 .footer .redes .redes__container a:hover i {
   color: #ff6900;
+}
+
+.footer .redes p {
+  margin-bottom: 0.75rem;
 }
 
 
@@ -631,5 +636,20 @@ body {
     top: 50%;
     transform: translateY(-50%);
     right: -9.5rem;
+  }
+
+
+  /*______________________________ Footer ______________________________*/
+  .footer {
+    margin-top: 8rem;
+  }
+
+  .footer ul li {
+    list-style: none;
+    margin-bottom: 1.25rem;
+  }
+
+  .footer .redes .redes__container a {
+    margin: 0 0.75rem 0 0;
   }
 }
