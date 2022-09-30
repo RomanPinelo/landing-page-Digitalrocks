@@ -64,15 +64,19 @@ setInterval(function() {
   Next();
 }, 10000);
 
-// Posición del scroll de la pantalla
+// Posición del scroll de la pantalla para cambiar el color de fondo
 var navBar = document.getElementById('navBar');
 
-window.onscroll = function() {
-  var y = window.scrollY;
-  
-  if (y >= 560) {
-    navBar.classList.add('active5');
-  } else {
-    navBar.classList.remove('active5');
-  }
-};
+if (screen.width > 1000) {
+  window.onscroll = function() {
+    let y = window.scrollY;
+    
+    y >= 560 ? navBar.classList.add('active5') : navBar.classList.remove('active5');
+  };
+} else {
+  window.onscroll = function() {
+    let y = window.scrollY;
+    
+    y >= 335 ? navBar.classList.add('active5') : navBar.classList.remove('active5');
+  };
+}
