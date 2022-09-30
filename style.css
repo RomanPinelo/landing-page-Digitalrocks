@@ -408,6 +408,15 @@ body {
   list-style: none;
 }
 
+.footer ul li a {
+  text-decoration: none;
+  color: #351e97;
+}
+
+.footer ul li a:hover {
+  color: #ff6900;
+}
+
 .footer .redes .redes__container a {
   display: inline-block;
   border: 2px solid #351e97;
@@ -417,12 +426,20 @@ body {
   position: relative;
 }
 
+.footer .redes .redes__container a:hover {
+  border: 2px solid #ff6900;
+}
+
 .footer .redes .redes__container a i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #351e97;
+}
+
+.footer .redes .redes__container a:hover i {
+  color: #ff6900;
 }
 
 
