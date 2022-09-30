@@ -414,6 +414,15 @@ body {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
+  position: relative;
+}
+
+.footer .redes .redes__container a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #351e97;
 }
 
 
