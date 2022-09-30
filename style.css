@@ -229,6 +229,58 @@ body {
 }
 
 
+/*______________________________ Sección de beneficios ______________________________*/
+.beneficios {
+  background-color: #ffffff77;/* Quitar al final */
+  margin-top: 2.5rem;
+}
+
+.beneficios img {
+  display: block;
+  width: 75%;
+  margin: 0 auto 1rem;
+}
+
+.beneficios .beneficios__info h1 {
+  text-align: center;
+  color: #ff6900;
+}
+
+.beneficios .beneficios__info .beneficios__info-textLogo {
+  width: 95%;
+  margin: 1rem auto;
+  display: flex;
+}
+
+.beneficios .beneficios__info .beneficios__info-textLogo .beneficios__info-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.beneficios .beneficios__info .beneficios__info-textLogo .beneficios__info-logo img {
+  display: block;
+  width: 1.75rem;
+}
+
+.beneficios .beneficios__info .beneficios__info-textLogo .beneficios__info-text p {
+  width: 92.5%;
+  margin: 0.5rem auto;
+  text-align: justify;
+}
+
+.beneficios .beneficios__info .beneficios__info-textLogo .beneficios__info-text .title {
+  color: #3b1d9f;
+}
+
+.beneficios .beneficios__info .beneficios__info-textLogo .beneficios__info-text .info {
+  color: #4e4e4e;
+}
+
+.beneficios .figure {
+  display: none;
+}
+
 /*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
   iPad View
 *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
@@ -292,5 +344,37 @@ body {
     width: 13rem;
     height: 2.5rem;
     line-height: 2.5rem;
+  }
+
+  /*______________________________ Sección de beneficios ______________________________*/
+  .beneficios {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .beneficios img {
+    width: 27.14rem;
+    margin: 0;
+  }
+
+  .beneficios .beneficios__info .beneficios__info-textLogo .beneficios__info-logo img {
+    width: 2.34rem;
+  }
+
+  .beneficios .beneficios__info .beneficios__info-textLogo .beneficios__info-text p {
+    margin: 0 auto 1.25rem;
+  }
+
+  .beneficios .beneficios__info .beneficios__info-textLogo .beneficios__info-text p:last-child {
+    margin: 0 auto 0.25rem;
+  }
+
+  .beneficios .figure {
+    display: block;
+    width: 19rem;
+    position: absolute;
+    left: -9.5rem;
+    bottom: -50rem;
   }
 }
