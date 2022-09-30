@@ -1,9 +1,296 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* body {
+body {
+  width: 100%;
+  background-color: #000; /* Quitar al final */
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Mobile View 
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+
+/*______________________________ Barra de navegacion ______________________________*/
+.navBar {
+  background-color: rgba(255, 255, 255, 0.62);
+  width: 100%;
+  height: 8.51rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.navBar img {
+  display: block;
+  width: 7.26rem;
+  height: 7.26rem;
+}
+
+.navBar .menuCel {
+  background-color: #fff;
+  width: 12.5rem;
+  position: absolute;
+  top: 1rem;
+  left: -20rem;
+  z-index: 10;
+  transition: 0.5s;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.navBar .menuCel.active4 {
+  left: 1rem;
+}
+
+.navBar .menuCel li {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.navBar .menuCel li a {
+  text-decoration: none;
+  padding-left: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #411b97;
+}
+
+.navBar .menuCel li a:hover {
+  color: #ff6900;
+}
+
+/* Botón de menú hamburguesa */
+.navBar .button {
+  background-color: #333;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.navBar .button .button_bar {
+  position: absolute;
+  background-color: #fff;
+  width: 80%;
+  height: 10%;
+  left: 10%;
+  border-radius: 9999px;
+  transition: 0.5s;
+}
+
+.navBar .button .Bar1 {
+  top: 17.5%;
+}
+
+.navBar .button .Bar2 {
+  top: 45%;
+}
+
+.navBar .button .Bar3 {
+  top: 72.5%;
+}
+
+.navBar .button .Bar1.active1 {
+  top: 45%;
+  transform: rotate(225deg);
+}
+
+.navBar .button .Bar2.active2 {
+  transform: scale(0);
+}
+
+.navBar .button .Bar3.active3 {
+  top: 45%;
+  transform: rotate(-225deg);
+}
+
+
+/*______________________________ Header ______________________________*/
+.header {
+  background-color: #333;/* Quitar al final */
+  width: 100%;
+  height: 60vh;
+}
+
+/* Slider en celular */
+.header .container__slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.header .container__slider .slider {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  margin-left: -100%;
+}
+
+.header .container__slider .slider .slider__section {
+  width: 100%;
+}
+
+.header .container__slider .slider .slider__section img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header .container__slider .slider .slider__section .textContainer {
+  position: relative;
+}
+
+.header .container__slider .slider .slider__section .textSlider {
+  width: 16rem;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.header .container__slider .slider .slider__section .textSlider .textOne {
+  font-size: 0.9rem;
+}
+
+.header .container__slider .slider .slider__section .textSlider .textTwo {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.header .container__slider .slider .slider__section .textSlider a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff6900;
+  display: block;
+  width: 9.25rem;
+  margin: 0 auto;
+  text-align: center;
+  height: 2.1rem;
+  line-height: 2.1rem;
+}
+
+.header .container__slider .slider__btn {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .container__slider .slider__btn span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #dcdcdc;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header .container__slider .slider__btn span:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.header .container__slider .slider__btn--left {
+  left: 1rem;
+}
+
+.header .container__slider .slider__btn--right {
+  right: 1rem;
+}
+
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  iPad View
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+@media screen and (min-width: 768px) {
+
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Desktop View
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+@media screen and (min-width: 1000px) {
+  /*______________________________ Barra de navegacion ______________________________*/
+  .navBar .menu {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    position: static;
+    width: 41.7rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button {
+    display: none;
+  }
+
+  /*______________________________ Header ______________________________*/
+  .header {
+    height: 43.5rem;
+  }
+
+  /* Slider */
+  .header .container__slider .slider__btn {
+    height: auto;
+    top: 57.5%;
+  }
+
+  .header .container__slider .slider__btn--left {
+    left: 4.5rem;
+  }
   
-} */
+  .header .container__slider .slider__btn--right {
+    right: 4.5rem;
+  }
+
+  .header .container__slider .slider .slider__section .textSlider {
+    width: 31.39rem;
+    height: 10.63rem;
+    bottom: 3rem;
+  }
+
+  .header .container__slider .slider .slider__section .textSlider .textOne {
+    font-size: 1.6rem;
+  }
+
+  .header .container__slider .slider .slider__section .textSlider .textTwo {
+    font-size: 3.5rem;
+  }
+
+  .header .container__slider .slider .slider__section .textSlider a {
+    width: 13rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
